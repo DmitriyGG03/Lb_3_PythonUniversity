@@ -78,13 +78,9 @@ class FightManager:
         if (self.character2.health < 50 and random.randint(1, 100) <= 80):
             self.__character2.execute_action(4, self.__character1)
         else:
-            self.__character2.execute_action(random.randint(1, 3), self.__character1)
-
-
-        
+            self.__character2.execute_action(random.randint(1, 3), self.__character1)   
 
             
-
     def check_character_win(self, character : CH.Character):
         return character.health == 0    
            
